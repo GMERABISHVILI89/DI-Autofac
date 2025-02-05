@@ -17,7 +17,9 @@ namespace DI_AutofacTest
 
             builder.RegisterType<Application>().As<IApplication>();
 
-            builder.RegisterType<BusinessLogic>().As<IBusinessLogic>();
+           // builder.RegisterType<BusinessLogic>().As<IBusinessLogic>();
+            builder.RegisterType<BetterBusinessLogic>().As<IBusinessLogic>();
+
 
 
             builder.RegisterAssemblyTypes(Assembly.Load(nameof(DemoLibrary)))
